@@ -1,0 +1,68 @@
+#imTiendas1{
+    float: right;
+    width: 60%;
+}
+#imTiendas2{
+    float: left;
+    width: 60%;
+}
+#parrafo1Tiendas{
+    padding-top: 5%;
+    margin-bottom: 5%;
+    max-width: 25%;
+}
+#parrafo2Tiendas{
+    margin-bottom: 5%;
+    max-width: 45%;
+    text-align: left; 
+    width: 60%;
+}
+#rowTiendas1{
+    margin-top: -28%;
+    margin-bottom: 20%;
+    background-color: #f5f1eb;
+}
+.hojaIzqTiendas{
+    position: absolute;
+    width: 15%;
+    left: 0;
+    bottom: 40%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.hojaDerTiendas{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#separadorTiendas{
+    width: 8%;
+}
+.tiendasGuion{
+    text-align: right;
+    color: #f58b71;
+}
+.linkTienda1{
+    width: 100%;
+}
+.linkTienda2{
+    float: right;
+    text-align: right;
+    width: 100%;
+}
+#divisorTiendas{
+    padding: 5%;
+    text-align: center;
+    background-color: #f5f1eb;
+}
+.distribuidoresTiendas{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.imDistribuidorTiendas{
+    margin: 0%;
+}

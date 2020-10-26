@@ -1,0 +1,15 @@
+.product-info-stock-sku{
+    display: none !important;
+}
+.fotorama__nav{
+    text-align: center;
+}
+.product.data.items{
+    margin-left:0;
+    margin-right:0;
+}
+@media only screen and (max-width:639px){
+    .product-info-price{
+        width:100%!important;
+   }
+}

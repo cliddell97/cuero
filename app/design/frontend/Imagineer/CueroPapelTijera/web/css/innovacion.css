@@ -1,0 +1,31 @@
+#imInnovacion1{
+    float: right;
+    width: 60%;
+}
+#parrafo1In{
+    padding-top: 5%;
+    margin-bottom: 5%;
+    max-width: 25%;
+}
+#rowIn1{
+    margin-top: -28%;
+    margin-bottom: 20%;
+    background-color: #f5f1eb;
+}
+.hojaIzqIn{
+    position: absolute;
+    left: 0;
+    bottom: 40%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.hojaDerIn{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#separadorIn{
+    width: 8%;
+}

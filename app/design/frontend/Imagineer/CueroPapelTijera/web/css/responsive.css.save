@@ -1,0 +1,109 @@
+@media only screen and (max-width: 600px) {
+	#myHeader{
+ 		text-align: center !important;
+		position: relative !important;
+		display: block !important;
+		opacity: 1 !important;
+ 	}
+	#lineaHeaderMenu{
+		opacity: 0 !important;
+	}
+ 	#logoMain{
+		max-width: 60% !important;
+ 	}
+	.nav-1::before{
+		display: none !important;
+	}
+	.nav-1::after{
+		display: none !important;
+	}
+	#textoBienvenida h1 {
+		font-size: 20px !important;
+	}
+	#textoBienvenida h3 {
+		font-size: 17px !important;
+		margin-top: -26px !important;
+
+	}
+	#textoBienvenida p {
+		font-size: 13px !important;
+		margin-top: -30px !important;
+		line-height: 1 !important;
+	}
+	.prevSlider, .nextSlider {
+		bottom: -90%; !important
+
+	}
+ 	#actionsTop{
+		position: absolute !important;
+		top: 0 !important;
+	}
+	#joinSign{
+		display: none;
+	}
+	.minicart-wrapper {
+		position:absolute;
+		right: 7%;
+		top: 50%;
+	}
+	#search{
+		display:none;
+	}
+	.footercpt{
+		background-color: #f48b71;
+		text-align: center;
+		
+	}
+	#suscribirme{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		background: transparent;
+		border: 2px solid #FFF;
+		height: 40px;
+		color: #FFF;
+		font-family: "Lato",serif;
+		font-size: 14px;
+		font-weight: 300;
+		margin-top: 5%;
+	}
+
+	#suscribirseFooter{
+		color: #FFF;
+		text-align: center;
+		font-weight: 300;
+		font-size: 16px
+	}
+	.listaFooter > ul > li > a{
+		color: #FFF !important;
+		font-size: 5vw;
+	}
+	.listaFooter > ul > li {
+		margin: 6% !important;
+	}
+	.separadorFooter{
+		display: none;
+	}	
+	#prodSlider{
+		width: 300px !important;
+		height: 300px !important;
+		position: relative !important;
+		top: 0 !important;
+		left: 0 !important;
+		margin: auto;
+		margin-bottom: 4%;
+		margin-top: 2%;
+	}
+	.bolsoTodosDias{
+		margin-top:450px;
+	}
+	.action.primary{
+		background: rgba(255, 249, 249, 0) !important;
+		color: #000000 !important;
+		border-color: #000000 !important;
+	}
+	.product-info-main{
+		margin: 5%;
+	}
+	
+}

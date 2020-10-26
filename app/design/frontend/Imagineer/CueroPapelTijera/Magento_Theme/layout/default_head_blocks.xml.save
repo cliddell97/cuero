@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>   
+        <css src="css/bootstrap-grid.min.css" /> 
+        <css src="css/animate.min.css" />
+        <css src="css/custom.css" />
+        <css src="css/conocenos.css" />		
+        <css src="css/sofiaprotti.css" />		
+        <css src="css/tiendas.css" />		
+        <css src="css/innovacion.css" />
+        <css src="css/detalle-producto.css" />
+        <css src="css/ellas-nos-inspiran.css" />				
+        <css src="css/slider.css" />		
+	<css src="css/responsive.css" />
+	<css src="css/slider.css"/>
+
+	<css src="galeria/.css" />
+	<css src="css/slider.css"/>
+
+
+        <link src="js/cpt-custom.js"/>
+        <link src="js/apariencia.js"/>
+	<link src="js/footer.js"/>                    
+	<link src="js/sliderProd.js"/>
+	
+        <!-- Google Fonts -->
+        <link rel="stylesheet" type="text/css" src="https://fonts.googleapis.com/css?family=Lato:300,400,500,700" src_type="url" />         
+    </head>
+</page>

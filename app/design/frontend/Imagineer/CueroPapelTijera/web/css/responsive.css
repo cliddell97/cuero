@@ -1,0 +1,213 @@
+
+@media only screen and (max-width: 700px) {
+	.politicas > img{
+		display:none !important;
+	}
+
+	#myHeader{
+ 		text-align: center !important;
+		display: block !important;
+		opacity: 1 !important;
+ 	}
+	#banner-slider-carousel{
+		margin-top:20% !important;
+	}
+	/*
+	#lineaHeaderMenu{
+		opacity: 0 !important;
+	}*/
+	#losquenopuedenfaltar{
+		padding: 0 !important;
+		padding-top: 7% !important;
+	}
+	#carrito{
+		display: none;
+	}
+ 	#logoMain{
+		max-width: 50% !important;
+ 	}
+	#logoBlanco{
+		margin:10px;
+	}
+	.hojaPalmera{
+		width: 50%;
+	}
+	.nav-1::before{
+		display: none !important;
+	}
+	.nav-1::after{
+		display: none !important;
+	}
+	#textoBienvenida h1 {
+		font-size: 20px !important;
+	}
+	#textoBienvenida h3 {
+		font-size: 17px !important;
+		margin-top: -26px !important;
+
+	}
+	#textoBienvenida p {
+		font-size: 13px !important;
+		margin-top: -30px !important;
+		line-height: 1 !important;
+	}
+	.prevSlider, .nextSlider {
+		bottom: -90%; !important
+
+	}
+ 	#actionsTop{
+		position: absolute !important;
+		top: 0 !important;
+	}
+	#joinSign{
+		display: none;
+	}
+	.minicart-wrapper {
+		position:absolute;
+		right: 7%;
+		top: 50%;
+	}
+	#search{
+		display:none;
+	}
+	.footercpt{
+		background-color: #f48b71;
+		text-align: center;
+		
+	}
+	#suscribirme{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		background: transparent;
+		border: 2px solid #FFF;
+		height: 40px;
+		color: #FFF;
+		font-family: "Lato",serif;
+		font-size: 14px;
+		font-weight: 300;
+		margin-top: 5%;
+	}
+
+	#suscribirseFooter{
+		color: #FFF;
+		text-align: center;
+		font-weight: 300;
+		font-size: 16px
+	}
+	.listaFooter > ul > li > a{
+		color: #FFF !important;
+		font-size: 5vw;
+	}
+	.listaFooter > ul > li {
+		margin: 6% !important;
+	}
+	.separadorFooter{
+		display: none;
+	}	
+	#prodSlider{
+		width: 300px !important;
+		height: 300px !important;
+		position: relative !important;
+		top: 0 !important;
+		left: unset !important;
+		right: unset !important;
+		margin-left: 12%;
+		margin-bottom: 4%;
+		margin-top: 2%;
+	}
+	.bolsoTodosDias{
+		text-align:center;
+	}
+	.action.primary{
+		background: rgba(255, 249, 249, 0) !important;
+		color: #000000 !important;
+		border-color: #000000 !important;
+	}
+	/*pagina de conocenos*/
+	#conocenosIntro{
+		width:100% !important;
+	}
+	 
+	#conocenosCuero {
+	        top: unset !important;
+    		right: unset !important;
+		position: relative !important;
+		width: 100% !important;
+	}
+	#conocenosSofia {
+    		position: relative !important;
+		width: 100% !important;
+		margin-top: 10% !important;
+		top: unset !important;
+	}
+	#divisionConocenos {
+    		display: none;
+	}
+	#conocenosSofiaLabel {
+    		position: relative!important;
+		right: unset !important;
+		margin-top: 2% !important;
+		margin-left: 55% !important;
+	}
+	/*pagina de tiendas*/
+	#imTiendas1{
+		float: unset !important;
+		width: 100% !important;
+	}	
+	#rowTiendas1 {
+		margin-top: -20% !important;
+	}
+	#parrafo2Tiendas {
+		margin-bottom: 5%;
+		max-width: 100% !important;
+		text-align: left;
+		width: 100% !important;
+	}
+	#imTiendas2{
+		float: unset !important;
+		width: 100% !important;
+	}
+	/* pagina ellas nos inspiran */
+	#imENI1 {
+		width: 100% !important;
+	}
+	#imENI2 {
+		width: 90% !important;
+		margin: 0 auto !important;
+	}
+	#imENI3 {
+		width: 100% !important;
+	}
+	#imENI4 {
+		width: 100% !important;
+	}
+	#imENI5 {
+		width: 100% !important;
+	}
+	/* pagina sofia protti */
+	#imSofia{
+		float: unset !important;
+		width: 100% !important;
+	}
+	#rowSP1 {
+		margin-top: -20% !important;
+	}
+	#parrafo1SP{
+		width: 100%;
+		max-width: 100%;
+	}
+	/*pagina de innovacion*/
+	#imInnovacion1 {
+		float: unset !important;
+		width: 100% !important;
+	}
+	#parrafo1In {
+		padding-top: 15% !important;
+		margin-bottom: 5%;
+		max-width: 100% !important;
+	}
+	#imInnovacion2{
+		margin-top: 5%;
+	}
+}

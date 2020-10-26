@@ -1,0 +1,31 @@
+#imSofia{
+    float: right;
+    width: 70%;
+}
+#parrafo1SP{
+    padding-top: 5%;
+    margin-bottom: 5%;
+    max-width: 30%;
+}
+#rowSP1{
+    margin-top: -28%;
+    margin-bottom: 20%;
+    background-color: #f5f1eb;
+}
+.hojaIzqSP{
+    position: absolute;
+    left: 0;
+    bottom: 40%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.hojaDerSP{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#separadorSP{
+    width: 8%;
+}

@@ -1,0 +1,63 @@
+<?php
+
+/**
+*  General template for displaying group of blocks devided into sections
+*/
+
+$group = $block->getGroupName();
+$groupCss = $block->getGroupCss();
+$groupBehavior = $block->getGroupBehaviour() ? $block->getGroupBehaviour() : '{"tabs":{"openedState":"active"}}';
+?>
+
+<div id="myHeader"  class="container transparente" style="position:fixed!important">
+    <div class="row">
+        <div class="col-lg-4">             
+        </div>
+        <div class="col-lg-4 shake animated">
+            <a href="<?php echo $this->getUrl(""); ?>" alt="Logo Cuero, papel y tijera">
+                <img id="logoMain" src="<?php echo $this->helper('\Magento\Cms\Helper\Wysiwyg\Images')->getBaseUrl().'logo-cuero-papel-tijeras.png'; ?>" alt="Logo Cuero, papel y tijeras" />
+            </a>
+        </div>
+        <div class="col-lg-4 fadeInRight animated" id="actionsTop">
+            <a href="<?php echo $this->getUrl("catalogsearch/advanced"); ?>" alt="Search">
+            <img id="search" class="topMenu" src="<?php echo $this->helper('\Magento\Cms\Helper\Wysiwyg\Images')->getBaseUrl().'search.png'; ?>" alt="Search" /></a>             
+<?php 
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $objectManager->create('Magento\Customer\Model\Session');
+if($customerSession->isLoggedIn()) : ?>    
+        <a class= "header_account_link" href="<?php echo $this->getUrl("customer/account/logout");?>">&nbsp;&nbsp;       
+            <img id="sign" class="topMenu" src="<?php echo $this->helper('\Magento\Cms\Helper\Wysiwyg\Images')->getBaseUrl().'sign-in.png'; ?>" alt="Sign in" />&nbsp;&nbsp;<?php echo __('Logout')?></a>
+<?php else: ?>        
+        <a id="joinSign" class= "header_account_link" href="<?php echo $this->getUrl("customer/account/login");?>">&nbsp;&nbsp;       
+            <img id="sign" class="topMenu" src="<?php echo $this->helper('\Magento\Cms\Helper\Wysiwyg\Images')->getBaseUrl().'sign-in.png'; ?>" alt="Sign in" />&nbsp;&nbsp;<?php echo __('Join/Sign in')?></a>
+<?php endif;?>           
+            <div id="carrito"> &nbsp;&nbsp;|&nbsp;&nbsp;</div>
+        </div>
+
+        <?php if ($detailedInfoGroup = $block->getGroupChildNames($group, 'getChildHtml')):?>
+            <div class="sections <?= /* @escapeNotVerified */ $groupCss ?>">
+                <?php $layout = $block->getLayout(); ?>
+                <div class="section-items <?= /* @escapeNotVerified */ $groupCss ?>-items" data-mage-init='<?= /* @escapeNotVerified */ $groupBehavior ?>'>
+                    <?php foreach ($detailedInfoGroup as $name):?>
+                        <?php
+                            $html = $layout->renderElement($name);
+                            if (!trim($html) && ($block->getUseForce() != true)) {
+                                continue;
+                            }
+                            $alias = $layout->getElementAlias($name);
+                            $label = $block->getChildData($alias, 'title');
+                        ?>
+                        <div class="section-item-title <?= /* @escapeNotVerified */ $groupCss ?>-item-title" data-role="collapsible">
+                            <a class="<?= /* @escapeNotVerified */ $groupCss ?>-item-switch" data-toggle="switch" href="#<?= /* @escapeNotVerified */ $alias ?>"><?= /* @escapeNotVerified */ $label ?></a>
+                        </div>
+                        <div class="section-item-content <?= /* @escapeNotVerified */ $groupCss ?>-item-content" id="<?= /* @escapeNotVerified */ $alias ?>" data-role="content"><?= /* @escapeNotVerified */ $html ?></div>
+                    <?php endforeach;?>
+                </div>
+            </div>
+        <?php endif; ?>
+        
+    </div>
+    <div id="lineaHeaderMenu"></div>
+</div>
+
+

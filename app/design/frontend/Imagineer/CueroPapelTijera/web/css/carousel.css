@@ -1,0 +1,151 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  text-align: center;
+  position: relative;
+  margin-bottom: 6%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prevSlider, .nextSlider {
+  cursor: pointer;
+  position: absolute;
+  bottom: 40%;
+  width: auto;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextSlider {
+  right: 14%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevSlider {    
+  right: 52%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevSlider:hover, .nextSlider:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+  z-index: 999 !important; 
+}
+
+.activeDot, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.sliderImage{
+	width: 100%;
+	max-width:100%;
+}
+
+.sliderProducto{
+    width: 90%;
+    padding-top: 11%;
+    text-align: center;
+    margin: 0 auto;
+}
+.sliderProductoInner{
+    border: 1px solid black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.sliderFront{
+    max-width: 90%;
+}
+
+.sliderBack{
+    max-width: 90%;
+}
+
+.caption {
+    text-transform: uppercase;
+    display: block;
+}
+.sliderNomProd{
+    text-transform: uppercase;
+}
+.sliderDividerRect{
+    background-color: #717171;
+    width: 80%;
+    display: block;
+    height: 80%;
+    margin: 0 auto;
+    margin-bottom: 30%;
+    margin-top: -14%;
+}
+.left{
+    float: left;
+    width: 40%;
+  }
+
+.divider{
+    width: 20%;
+}
+
+.right{
+    float: left;
+    width: 40%;
+ }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .bolsoSlider{
+    position: absolute;
+    bottom: 40%;
+  }
+
+.imgSlider:hover{
+
+ opacity: 1 !important;
+
+}  
